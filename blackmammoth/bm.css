@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cardtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.drawbutton {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 3px;
+    height: 50px;
+    width: 100px;
+    padding: 11px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#drawgift {
+    border: 2px solid seagreen;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#drawnogift {
+    border: 2px solid darkred;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#drawgift:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+
+#drawnogift:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.unselectable {
+    user-select: none;
+}
+
+#cardtext {
+    font-size: 0.9em;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#card {
+    padding: 50px 20px 50px 20px;
+    height: 250px;
+    width: 210px;
+    background-color: #EEEEEE;
+    border: 2px solid #888888;
+    border-radius: 15px;
+    color: #333333;
+    vertical-align: middle;
+    text-align: center;
+}

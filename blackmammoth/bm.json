@@ -1,0 +1,139 @@
+{
+    "cards": {
+        "g_new": {
+            "title":"New Present",
+            "description":"Pick a new gift from the middle. This card does NOT allow you to unwrap it if it is not already!"
+        },
+        "g_steal": {
+            "title":"Steal Present",
+            "description":"Steal a gift from another player. This card does NOT allow you to unwrap it if it is not already!"
+        },
+        "g_open": {
+            "title":"Open Present",
+            "description":"Choose any gift to be unwrapped. The player in possession unwraps it. If it is still in the middle, you unwrap it."
+        },
+        "rg_f_generous": {
+            "title":"Regift by Force: Generosity",
+            "description":"Feel the spirit of giving by giving your gift to anyone else, without replacing it. You may gift someone who already has a gift, who then must regift that gift to someone else. No repeats."
+        },
+        "rg_f_steal": {
+            "title":"Regift by Force: Steal",
+            "description":"Give your gift to anyone else, then steal a gift to replace it. If you do not steal the gift of the person you are regifting and they already have a gift, they must regift that gift to someone else. No repeats."
+        },
+        "rg_f_new": {
+            "title":"Regift by Force: New",
+            "description":"Give your gift to anyone else, then pick a new gift from the middle to replace it. You may gift someone who already has a gift, who then must regift that gift to someone else. No repeats."
+        },
+        "rg_generous": {
+            "title":"Regift: Generosity",
+            "description":"Feel the spirit of giving by giving your gift to anyone else who does not have a gift."
+        },
+        "rg_steal": {
+            "title":"Regift: Steal",
+            "description":"Give your gift to someone who does not have a gift, then steal a gift to replace it. You may swap gifts with someone by regifting your gift to them and stealing their gift."
+        },
+        "rg_new": {
+            "title":"Regift: New",
+            "description":"Give your gift to someone who does not have a gift, then pick a new gift from the middle to replace it."
+        },
+        "m_box": {
+            "title":"Modifier: Box in a Box",
+            "description":"Pick any unopened gift and place it in another box (physical preferred, metaphorical accepted). The first Open Present card played against it removes the outer box only."
+        },
+        "m_grand": {
+            "title":"Modifier: Grand Prize",
+            "description":"Pick any unopened gift and deem it the grand prize. It may not be opened until the end of the game."
+        },
+        "m_slip": {
+            "title":"Modifier: Slippery",
+            "description":"Pick any gift to become slippery. Any player may choose to steal this gift rather than drawing a card on their turn."
+        },
+        "m_stick": {
+            "title":"Modifier: Sticky",
+            "description":"Pick any gift to become sticky. This gift cannot be taken from or given away by the player that possesses it."
+        },
+        "m_slip_nochain": {
+            "title":"Modifier: Slippery",
+            "description":"Pick any gift to become slippery. Any player WITHOUT a gift may choose to steal this gift rather than drawing a card on their turn."
+        },
+        "m_odd_even": {
+            "title":"Modifier: Odd Players Only",
+            "description":"Pick any gift. It may only be possessed by odd or even numbered players, whichever you choose when playing this card."
+        },
+        "m_clear": {
+            "title":"Modifier: Clear",
+            "description":"Pick any gift and clear all modifier cards that have been applied to it."
+        }
+    },
+    "twists":{
+        "unopen_right":{
+            "title": "Unopened Pass Right",
+            "description": "All players with UNOPENED gifts must pass to the next person with an UNOPENED gift on their right."
+        },
+        "unopen_left":{
+            "title": "Unopened Pass Left",
+            "description": "All players with UNOPENED gifts must pass to the next person with an UNOPENED gift on their right."
+        },"open_right":{
+            "title": "Opened Pass Right",
+            "description": "All players with OPENED gifts must pass to the next person with an OPENED gift on their right."
+        },
+        "open_left":{
+            "title": "Opened Pass Left",
+            "description": "All players with OPENED gifts must pass to the next person with an OPENED gift on their right."
+        },
+        "bargain_open":{
+            "title": "Open Bargaining",
+            "description": "All players with OPENED gifts may make a single offer to any one player to trade gifts in numerical order."
+        },
+        "bargain_unopen":{
+            "title": "Unopened Bargaining",
+            "description": "All players with UNOPENED gifts may make a single offer to any one player to trade gifts in numerical order."
+        }
+    },
+    "gamemodes":{
+        "merry_christmas": {
+            "title":"Merry Christmas",
+            "description": "A basic game with lots of gift giving and merry times. You might even like each other more by the end of it.",
+            "cardset":{
+                "nogift":{
+                    "g_new":10
+                },
+                "gift":{
+                    "rg_new":10
+                }
+            }
+        },
+        "merry_quickmas": {
+            "title":"Merry Quickmas",
+            "description": "A quicker version of the game that avoids long chains and gets gifts into hands quickly. If you're trying to save time, open presents sooner, or just get it over with, this game mode is for you."
+        },
+        "merry_cutthroat": {
+            "title":"Merry Cutthroat",
+            "description": "A well balanced game with moderate amounts of stealing. If you like the resentful feeling from backstabbing your friends and family for the best gift in the circle, this is the way to go.",
+            "cardset":{
+                "nogift":{
+                    "g_new":10,
+                    "g_open":7,
+                    "g_steal":7,
+                    "m_box":2,
+                    "m_grand":1,
+                    "m_slip":2,
+                    "m_clear":2,
+                    "m_stick":2,
+                    "m_odd_even":1
+                },
+                "gift":{
+                    "rg_new":10
+                },
+                "twists":{
+                    "bargain_open":1,
+                    "bargain_unopen":1
+                }
+            }
+        },
+        "merry_chaos": {
+            "title":"Merry Chaos",
+            "description": "Gifts fly every which way from person to person. Don't get too attached. If you want a more fun and involved version of simply distributing gifts randomly, this is the way to go."
+        }
+    }
+}
