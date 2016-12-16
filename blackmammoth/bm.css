@@ -53,8 +53,12 @@ body {
     padding: 10px;
 }
 
+#buttonWrapper {
+    padding: auto;
+}
+
 .drawButton {
-    width:100%
+    width:100%;
 }
 
 #cardWrapper {
